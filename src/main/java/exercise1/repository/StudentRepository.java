@@ -1,11 +1,11 @@
-package repository;
+package exercise1.repository;
 
 import java.util.List;
 
 import org.hibernate.Session;
 
-import hibernate.HibernateSession;
-import model.Student;
+import exercise1.hibernate.HibernateSession;
+import exercise1.model.Student;
 
 public class StudentRepository{
 

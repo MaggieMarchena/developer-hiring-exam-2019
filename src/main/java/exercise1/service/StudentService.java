@@ -1,11 +1,11 @@
-package service;
+package exercise1.service;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import model.Student;
-import repository.StudentRepository;
+import exercise1.model.Student;
+import exercise1.repository.StudentRepository;
 
 public class StudentService {
     public List<Student> getStudentsOrderByLastName(){

@@ -4,16 +4,16 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:8343/</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password"/>
+        <property name="exercise1.hibernate.dialect">org.exercise1.hibernate.dialect.MySQLDialect</property>
+        <property name="exercise1.hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="exercise1.hibernate.connection.url">jdbc:mysql://localhost:8343/</property>
+        <property name="exercise1.hibernate.connection.username">root</property>
+        <property name="exercise1.hibernate.connection.password"/>
 
-        <mapping class="model.Employee"/>
-        <mapping class="model.Person"/>
-        <mapping class="model.Principal"/>
-        <mapping class="model.Janitor"/>
-        <mapping class="model.Student"/>
+        <mapping class="exercise1.model.Employee"/>
+        <mapping class="exercise1.model.Person"/>
+        <mapping class="exercise1.model.Principal"/>
+        <mapping class="exercise1.model.Janitor"/>
+        <mapping class="exercise1.model.Student"/>
     </session-factory>
 </hibernate-configuration>
