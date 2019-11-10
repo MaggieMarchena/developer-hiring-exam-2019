@@ -14,4 +14,7 @@ public class Subject implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "subject_id")
     private long id;
+
+    @Column(name = "subject_name")
+    private String name;
 }
