@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public abstract class Person {
     private long id;
-    private String name;
+    private String firstName;
     private String lastName;
     private Date birthday;
 }
