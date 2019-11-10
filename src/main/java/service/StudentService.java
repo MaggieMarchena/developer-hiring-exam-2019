@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import model.Student;
+import model.Subject;
 import repository.StudentRepository;
 
 public class StudentService {
@@ -12,7 +13,7 @@ public class StudentService {
         return StudentRepository.getAllStudentsByLastName();
     }
 
-    public Set<Student> getStudentsTakingASubject(final String subject) {
+    public Set<Student> getStudentsTakingASubject(final Subject subject) {
         List<Student> students = StudentRepository.getAllStudents();
         return students.stream()
                 .filter(student -> student.getEnrollments().contains(subject))
