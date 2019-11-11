@@ -7,7 +7,7 @@ import org.hibernate.Session;
 import exercise1.hibernate.HibernateSession;
 import exercise1.model.Student;
 
-public class StudentRepository{
+@SuppressWarnings("unchecked") public class StudentRepository{
 
     public static List<Long> getAllStudentsTakingASubject(long subjectId) {
         Session session = HibernateSession.getSessionFactory().openSession();
